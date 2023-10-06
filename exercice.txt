@@ -1,0 +1,73 @@
+algorithme_mention
+variables
+      n1,n2,n3,moyenne:reel
+      mention:chaine de caractere
+debut
+  ecrire("entrer les trois notes :")
+  lire(n1,n2,n3)
+moyenne<¬¬¬(n1+n2+n3)/3
+tant que n1>20 ou n1<0 faire
+ecrire("entrer correctement la note 1 :")
+lire(n1)
+fin tant que
+tant que n2>20 ou n2<0 faire
+ecrire("entrer correctement la note 2 :")
+lire(n2)
+fin tant que
+tant que n3>20 ou n3<0 faire
+ecrire("entrer correctement la note 3 :")
+lire(n3)
+fin tant que
+   si moyenne<10 alors
+    mention<¬¬¬"insuffisant"
+    sinon 
+     si moyenne>=10 et moyenne<12
+      mention<¬¬¬"passable"
+     sinon 
+      si moyenne>=12 et moyenne<14
+       mention<¬¬¬"assez bien"
+      sinon
+       si moyenne>=14 et moyenne<16
+         mention<¬¬¬"bien"
+       sinon
+        mention<¬¬¬"tres bien"
+       fin si
+      fin si
+     fin si
+   fin si
+  ecrire("La moyenne est:",moyenne)
+  ecrire("Votre mention est:",mention)
+fin 
+
+
+
+
+
+
+
+
+
+
+        ***python***
+n1 = float(imput("enter mark 1 :"))
+n2 = float(imput("enter mark 2 :"))
+n3 = float(imput("enter mark 3 :"))
+while n1 >20 or n1<0 :
+n1 = float(imput("enter the correct mark :"))
+while n2 >20 or n2<0 :
+n2 = float(imput("enter the correct mark :"))
+while n3 >20 or n3<0 :
+n3 = float(imput("enter the correct mark :"))
+mo = (n1 + n2 + n3 )/3
+if m < 10 :
+men ="insufficient"
+elif m>=10 and m<12 :
+men ="acceptable"
+elif m>=12 and m<14 :
+men ="quit good"
+elif :m>=14 and m<16 :
+men = "good"
+else:
+men ="very good"
+print("The average is:",m)
+print("The mention is:",men)
