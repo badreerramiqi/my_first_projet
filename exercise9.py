@@ -1,0 +1,5 @@
+a = input("saisir une chaine de caractére :")
+b = input("entrer ce que vous voulez changer :")
+c = input("entrer le changement :")
+x = a.replace(b,c)
+print(x)
